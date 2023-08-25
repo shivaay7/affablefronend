@@ -13,7 +13,7 @@ export default function Home() {
 
   //create end point to fetch the data
   const loadData = async () => {
-    let response = await fetch("/api/foodData", {
+    let response = await fetch("https://affable.onrender.com/api/foodData", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
