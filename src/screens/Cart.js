@@ -17,7 +17,7 @@ export default function Cart() {
     try {
       let userEmail = localStorage.getItem("userEmail");
       console.log(userEmail);
-      let response = await fetch("/api/orderData", {
+      let response = await fetch("https://affable.onrender.com/api/orderData", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
