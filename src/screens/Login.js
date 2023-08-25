@@ -9,7 +9,7 @@ let navigate = useNavigate();
     e.preventDefault();
   
     try {
-      const response = await fetch("/api/loginuser", {
+      const response = await fetch("https://affable.onrender.com/api/loginuser", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
