@@ -10,7 +10,7 @@ export default function SignUp() {
         
         console.log(JSON.stringify({name:credentials.name,email:credentials.email,password:credentials.password,location:credentials.location}))
         try {
-          const response = await fetch("http://localhost:5000/api/creatuser",{
+          const response = await fetch("/api/creatuser",{
             method:"POST",
             headers:{
               'Content-Type':'application/json'
